@@ -35,4 +35,3 @@ body:
     id: screenshot
     attributes:
       label: Screenshot (optional)
-      description: Crop out names and anything private before attaching.

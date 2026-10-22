@@ -2,10 +2,6 @@ name: 🔎 Search results
 description: A search that found the wrong people or missed the right ones
 labels: ["search"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Issues here are public. Please don't post screenshots of results or anyone's name. Describe the search and what was wrong.
   - type: textarea
     id: query
     attributes:
@@ -39,4 +35,4 @@ body:
     id: details
     attributes:
       label: Anything else
-      description: e.g. "showed lots of Heads of Partnerships instead of VC partners". Roles and companies are fine; names aren't.
+      description: e.g. "showed lots of Heads of Partnerships instead of VC partners"
