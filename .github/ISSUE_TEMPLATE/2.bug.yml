@@ -1,0 +1,38 @@
+name: 🐛 Bug
+description: Something broke or didn't work as expected
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where
+      options:
+        - Signing in
+        - Onboarding
+        - Search
+        - Founders directory
+        - Asking for an intro
+        - Adding my LinkedIn network
+        - Somewhere else
+    validations:
+      required: true
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      options:
+        - Computer
+        - Phone
+        - Tablet
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (optional)
+      description: Crop out names and anything private before attaching.

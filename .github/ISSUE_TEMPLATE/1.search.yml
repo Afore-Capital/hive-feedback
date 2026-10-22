@@ -1,0 +1,42 @@
+name: 🔎 Search results
+description: A search that found the wrong people or missed the right ones
+labels: ["search"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Issues here are public. Please don't post screenshots of results or anyone's name. Describe the search and what was wrong.
+  - type: textarea
+    id: query
+    attributes:
+      label: What you searched
+      description: Copy the exact text you typed into Hive.
+      placeholder: Seed investors who back developer tools
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Who you hoped to find
+      description: The kind of person, not a name.
+      placeholder: Partners at seed funds who've led dev tools rounds
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What went wrong
+      options:
+        - Showed people who don't fit
+        - Missed people I know are in the network
+        - Ranked the right people too low
+        - The "why they fit" line was wrong
+        - Too slow
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Anything else
+      description: e.g. "showed lots of Heads of Partnerships instead of VC partners". Roles and companies are fine; names aren't.

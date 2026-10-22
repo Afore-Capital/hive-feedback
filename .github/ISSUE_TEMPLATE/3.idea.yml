@@ -1,0 +1,19 @@
+name: 💡 Idea
+description: A feature or change that would make Hive more useful
+labels: ["idea"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What you're trying to do
+      description: The problem or moment where Hive fell short.
+      placeholder: My LinkedIn has lots of people I barely know, so intros through them won't land.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      placeholder: Let me mark my 20 closest connections so search favors people I can actually intro.
+    validations:
+      required: true
